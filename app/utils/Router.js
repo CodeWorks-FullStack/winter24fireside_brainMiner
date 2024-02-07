@@ -110,7 +110,6 @@ export class Router {
       delete this.app[c.name]
     })
     currentRoute.controllers.forEach(c => {
-      debugger
       // @ts-ignore
       this.app[c.name] = new c()
     })
