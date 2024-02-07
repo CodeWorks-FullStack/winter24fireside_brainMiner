@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://em-content.zobj.net/source/microsoft/378/brain_1f9e0.png">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+    integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Workbench&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>Brain Gains</title>
+</head>
+
+<body>
+  <!-- SECTION -->
+  <header class="container-fluid">
+      <div class="row text-center">
+        <h2 class="py-2 f-workbench">  Brain Gains</h2>
+      </div>
+  </header> 
+
+  <!-- SECTION -->
+  <main>
+
+    <section id="router-view" class="flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+      <img onclick="app.GameController.mine()" class="brain" src="https://em-content.zobj.net/source/microsoft-teams/363/brain_1f9e0.png" alt="Picture of brain pulsing">
+      <!-- primary viewport -->
+      <div class="container">
+        <section class="row justify-content-around">
+          <!-- STUB current brain powers row -->
+          <div class="col-7 m-2 fs-4 fw-bold text-center d-inline bg-light rounded-pill">
+            <span id="brain-power">100</span><span><i class="mdi mdi-head-snowflake"></i></span>
+          </div>
+          <div class="col-5 bg-dark text-light rounded-pill fs-5 text-end" title="power per click">
+           <span id="click-brain-power">10</span><i class="mdi mdi-cursor-default-click"></i>
+          </div>
+          <div class="col-5 bg-dark text-light rounded-pill fs-5" title="power per click">
+            <i class="mdi mdi-timer-sand"></i><span id="auto-brain-power">10</span>
+          </div>
+        </section>
+        <!-- STUB shop area -->
+        <section class="row rounded bg-dark mt-2" id="shop">
+          <div class="col-12 text-center text-light">Shop <i class="mdi mdi-shopping"></i></div>
+          <div class="col-6 p-2" >
+            <div class="row" id="shop-click">
+              <!-- click upgrades go here -->
+            </div>
+          </div>
+          <div class="col-6 p-2" >
+            <div class="row" id="shop-auto">
+              <!-- auto upgrades go here -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SECTION -->
+  <footer class="bg-dark text-light">
+ 
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
+    integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+
+  <script src="app/App.js" type="module"></script>
+</body>
+
+</html>
